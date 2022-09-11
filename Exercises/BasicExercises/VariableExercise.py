@@ -12,6 +12,6 @@ fName = 'John'
 name = 'John Doe'
 age = 27
 print('First name: '+fName)
-print('Full name: '+Name)
-print('Age: '+age)
+print('Full name: '+name)
+print('Age: '+str(age))
 

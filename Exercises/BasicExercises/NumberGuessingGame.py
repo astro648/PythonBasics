@@ -1,18 +1,18 @@
 import random as r
 
 
-def randnumgame(myInput):
+def RandNumGame(myInput):
     solution = r.randint(0, 10)
     print("--")
     print("Random number generated from 0 to 10, input answer:")
 
     if myInput != solution:
         print("Wrong number")
-        randnumgame()
+        RandNumGame()
     else:
         print("Correct number")
-        randnumgame()
+        RandNumGame()
 
 
 myInput = int(input())  # making it a parameter
-randnumgame(myInput)
+RandNumGame(myInput)
