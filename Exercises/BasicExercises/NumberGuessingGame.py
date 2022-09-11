@@ -14,5 +14,5 @@ def RandNumGame(myInput):
         RandNumGame()
 
 
-myInput = int(input())  # making it a parameter
-RandNumGame(myInput)
+myInput2 = str(input())  # making it a parameter
+RandNumGame(myInput2)
