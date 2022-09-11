@@ -1,12 +1,12 @@
 import random as r
 
 
-def RandNumGame(myInput):
-    solution = r.randint(0, 10)
+def RandNumGame():
+    randnum = r.randint(0, 10)
     print("--")
     print("Random number generated from 0 to 10, input answer:")
-
-    if myInput != solution:
+    solution = int(input())
+    if solution != randnum:
         print("Wrong number")
         RandNumGame()
     else:
@@ -14,5 +14,4 @@ def RandNumGame(myInput):
         RandNumGame()
 
 
-myInput = str(input())  # making it a parameter
-RandNumGame(myInput)
+RandNumGame()
