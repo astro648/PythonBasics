@@ -1,9 +1,14 @@
 passwordTuple = ("123456", "123456789", "qwerty", "password", "admin")
+
+
 def passwordInput():
     pwdinput = input("Password: ")
-    if pwdinput == passwordTuple(0) or pwdinput == passwordTuple(1) or pwdinput == passwordTuple(2) or pwdinput == passwordTuple(3) or pwdinput == passwordTuple(4):
-        print("Correct")
-        passwordInput()
-    else:
-        print("Incorrect, try again")
-        passwordInput()
+    for x in passwordTuple:
+        if x < 4:
+            if pwdinput == passwordTuple(x):
+                print("Correct")
+            else:
+                x = x + 1
+        else:
+            print("Incorrect, try again")
+            passwordInput()
