@@ -1,4 +1,6 @@
 f = open("lipsumpar.txt")
-contents = f.read()
+# line = f.readline()
+for line in f:
+    print(line.strip())
+
 f.close()
-print(contents)
