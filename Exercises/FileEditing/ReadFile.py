@@ -1,4 +1,4 @@
-f = open("lipsum5par.txt")
+f = open("lipsumpar.txt")
 contents = f.read()
 f.close()
 print(contents)
