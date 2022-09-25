@@ -9,4 +9,4 @@ with open('1wklaunchwrite.csv', mode='w') as csv_file:
                      'Date of Launch': '24-Sep-22'})
     writer.writerow({'Spacecraft': 'Starlink Group 4-35', 'Rocket': 'Falcon 9 Block 5', 'Company': 'SpaceX',
                      'Date of Launch': '24-Sep-22'})
-    
+
