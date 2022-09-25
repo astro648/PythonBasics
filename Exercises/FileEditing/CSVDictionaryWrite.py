@@ -1,6 +1,6 @@
 import csv
 
-with open('1wklaunch.csv', mode='w') as csv_file:
+with open('1wklaunchwrite.csv', mode='w') as csv_file:
     fieldnames = ['Spacecraft', 'Rocket', 'Company', 'Date of Launch']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
