@@ -44,3 +44,5 @@ class Salary(Person):
         self.salary = salary
         self.commission = commission
         self.finalSalary = finalSalary
+
+        Person.__init__(self, name, idNumber)
