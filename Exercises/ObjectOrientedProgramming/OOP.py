@@ -46,3 +46,11 @@ class Salary(Person):
         self.finalSalary = finalSalary
 
         Person.__init__(self, name, idNumber)
+
+    def details(self):
+        print("-- Salary + Employee info --")
+
+        # Basic info
+        print(self.name)
+        print(self.idNumber)
+        print(self.post)
