@@ -24,3 +24,8 @@ class Employee(Person):
 
         # invoking init of first class
         Person.__init__(self, name, idnumber)
+
+    def details(self):
+        print('My name is {}'.format(self.name))
+        print('My ID number is {}'.format(self.idnumber))
+        print('My post is {}'.format(self.post))
