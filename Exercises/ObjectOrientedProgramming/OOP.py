@@ -12,7 +12,7 @@ class Person(object):
     def details(self):
         print('My name is {}'.format(self.name))
         print('My ID number is {}'.format(self.idnumber))
-
+print("-- Name & ID test --")
 p1 = Person("Ayaan", 1234)
 p1.display()
 p1.details()
@@ -29,3 +29,9 @@ class Employee(Person):
         print('My name is {}'.format(self.name))
         print('My ID number is {}'.format(self.idnumber))
         print('My post is {}'.format(self.post))
+
+print("")
+print("-- Employee info --")
+employeeJohn = Employee('John', 123456, 200000, "Intern")
+employeeJohn.display()
+employeeJohn.details()
