@@ -13,7 +13,14 @@ class Person(object):
         print('My name is {}'.format(self.name))
         print('My ID number is {}'.format(self.idnumber))
 
-
-p1 = Person("Ayaan", "123456")
+p1 = Person("Ayaan", 1234)
 p1.display()
 p1.details()
+
+class Employee(Person):
+    def __init__(self, name, idnumber, salary, post):
+        self.salary = salary
+        self.post = post
+
+        # invoking init of first class
+        Person.__init__(self, name, idnumber)
