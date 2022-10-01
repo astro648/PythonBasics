@@ -18,16 +18,16 @@ p1.display()
 p1.details()
 
 class Employee(Person):
-    def __init__(self, name, idnumber, salary, post):
+    def __init__(self, name, idNumber, salary, post):
         self.salary = salary
         self.post = post
 
         # invoking init of first class
-        Person.__init__(self, name, idnumber)
+        Person.__init__(self, name, idNumber)
 
     def details(self):
         print('My name is {}'.format(self.name))
-        print('My ID number is {}'.format(self.idnumber))
+        print('My ID number is {}'.format(self.idNumber))
         print('My post is {}'.format(self.post))
 
 print("")
@@ -35,3 +35,12 @@ print("-- Employee info --")
 employeeJohn = Employee('John', 123456, 200000, "Intern")
 employeeJohn.display()
 employeeJohn.details()
+
+class Salary(Person):
+    def __init__(self, name, idNumber, post, salary, commission, finalSalary):
+        self.name = name
+        self.idNumber = idNumber
+        self.post = post
+        self.salary = salary
+        self.commission = commission
+        self.finalSalary = finalSalary
