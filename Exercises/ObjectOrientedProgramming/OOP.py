@@ -30,7 +30,7 @@ class Employee(Person):
 
     def details(self):
         print('My name is {}'.format(self.name))
-        print('My ID number is {}'.format(self.idNumber))
+        print('My ID number is {}'.format(self.idnumber))
         print('My post is {}'.format(self.post))
 
 
@@ -68,3 +68,10 @@ class Salary(Person):
         print("My salary is {}".format(self.salary))
         print("My commission payments are {}".format(self.commission))
         print("My final salary is {}".format(self.finalSalary))
+
+
+print("")
+print("-- Salary + Employee Info --")
+employeeJoe = Salary('Joe', 135790, 'Senior Software Developer', 145000, 0000, 0000)  # 0000 is placeholder
+employeeJoe.display()
+employeeJoe.details()
