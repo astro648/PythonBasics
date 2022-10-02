@@ -64,5 +64,7 @@ class Salary(Person):
         self.commission = self.salary * 0.055
         self.finalSalary = self.salary + self.commission
 
-        
-
+        # Display
+        print("My salary is {}" + self.salary)
+        print("My commission payments are {}" + self.commission)
+        print("My final salary is {}" + self.finalSalary)
