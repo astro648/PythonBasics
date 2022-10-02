@@ -59,3 +59,10 @@ class Salary(Person):
         print("My name is {}" + self.name)
         print("My ID number is {}" +self.idNumber)
         print("My post is {}" +self.post)
+
+        # Salary calculations
+        self.commission = self.salary * 0.055
+        self.finalSalary = self.salary + self.commission
+
+        
+
