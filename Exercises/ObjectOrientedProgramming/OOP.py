@@ -12,10 +12,13 @@ class Person(object):
     def details(self):
         print('My name is {}'.format(self.name))
         print('My ID number is {}'.format(self.idnumber))
+
+
 print("-- Name & ID test --")
 p1 = Person("Ayaan", 1234)
 p1.display()
 p1.details()
+
 
 class Employee(Person):
     def __init__(self, name, idNumber, salary, post):
@@ -30,11 +33,13 @@ class Employee(Person):
         print('My ID number is {}'.format(self.idNumber))
         print('My post is {}'.format(self.post))
 
+
 print("")
 print("-- Employee info --")
 employeeJohn = Employee('John', 123456, 200000, "Intern")
 employeeJohn.display()
 employeeJohn.details()
+
 
 class Salary(Person):
     def __init__(self, name, idNumber, post, salary, commission, finalSalary):
@@ -51,6 +56,6 @@ class Salary(Person):
         print("-- Salary + Employee info --")
 
         # Basic info
-        print(self.name)
-        print(self.idNumber)
-        print(self.post)
+        print("My name is {}" + self.name)
+        print("My ID number is {}" +self.idNumber)
+        print("My post is {}" +self.post)
