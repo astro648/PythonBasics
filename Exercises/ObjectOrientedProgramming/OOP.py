@@ -56,15 +56,15 @@ class Salary(Person):
         print("-- Salary + Employee info --")
 
         # Basic info
-        print("My name is {}" + self.name)
-        print("My ID number is {}" +self.idNumber)
-        print("My post is {}" +self.post)
+        print("My name is {}".format(self.name))
+        print("My ID number is {}".format(self.idNumber))
+        print("My post is {}".format(self.post))
 
         # Salary calculations
         self.commission = self.salary * 0.055
         self.finalSalary = self.salary + self.commission
 
         # Display
-        print("My salary is {}" + self.salary)
-        print("My commission payments are {}" + self.commission)
-        print("My final salary is {}" + self.finalSalary)
+        print("My salary is {}".format(self.salary))
+        print("My commission payments are {}".format(self.commission))
+        print("My final salary is {}".format(self.finalSalary))
