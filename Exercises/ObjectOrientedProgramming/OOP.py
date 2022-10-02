@@ -62,8 +62,8 @@ class Salary(Person):
         print("My post is {}".format(self.post))
 
         # Salary calculations
-        self.commission = self.salary * 0.055
-        self.finalSalary = self.salary + self.commission
+        self.commission = int(self.salary) * 0.055
+        self.finalSalary = str(self.salary) + str(self.commission)
 
         # Display
         print("My salary is {}".format(self.salary))
@@ -71,8 +71,10 @@ class Salary(Person):
         print("My final salary is {}".format(self.finalSalary))
 
 
-print("")
-print("-- Salary + Employee Info --")
-employeeJoe = Salary('Joe', 135790, 'Senior Software Developer', 145000, 0000, 0000)  # 0000 is placeholder
-employeeJoe.display()
-employeeJoe.details()
+f = open('employees.csv')
+csvf = csv.reader(f)
+for row in csvf:
+    print("")
+    employee = Salary({row[0]}, {row[1]}, {row[2]}, {row[3]}, 0000, 0000)  # 0000 is placeholder
+    employee.display()
+    employee.details()
