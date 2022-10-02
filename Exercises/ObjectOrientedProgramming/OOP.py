@@ -53,8 +53,6 @@ class Salary(Person):
         Person.__init__(self, name, idNumber)
 
     def details(self):
-        print("-- Salary + Employee info --")
-
         # Basic info
         print("My name is {}".format(self.name))
         print("My ID number is {}".format(self.idNumber))
